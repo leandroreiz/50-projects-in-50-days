@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #111;
+  color: #fff;
+  font-family: 'Muli', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.text {
+  text-transform: uppercase;
+}
+
+.logo {
+  width: 400px;
+}
+
+.logo.menu {
+  width: 150px;
+}
+
+.nav-btn {
+  border: none;
+  background-color: transparent;
+  color: #fff;
+  font-size: 25px;
+  cursor: pointer;
+}
+
+.open-btn {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+}
+
+.nav {
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  transform: translateX(100%);
+  transition: transform 0.3s ease-in-out;
+}
+
+.nav.visible {
+  transform: translateX(0);
+}
+
+.nav-white {
+  background-color: #fff;
+  width: 60%;
+  max-width: 480px;
+  min-width: 320px;
+  transition-delay: 0.4s;
+}
+
+.nav-white.visible {
+  transition-delay: 0s;
+}
+
+.nav-red {
+  background-color: red;
+  width: 95%;
+  transition-delay: 0.2s;
+}
+
+.nav-red.visible {
+  transition-delay: 0.2s;
+}
+
+.nav-black {
+  background-color: #111;
+  width: 95%;
+  padding: 40px;
+  text-align: end;
+  transition-delay: 0s;
+  /* position: relative; */
+}
+
+.nav-black.visible {
+  transition-delay: 0.4s;
+}
+
+.close-btn {
+  opacity: 0.3;
+  position: absolute;
+  top: 40px;
+  left: 30px;
+}
+
+.list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.list li {
+  margin: 20px 0;
+}
+
+.list li a {
+  color: #fff;
+  font-size: 14px;
+  text-decoration: none;
+}
+
+.list ul {
+  list-style-type: none;
+  padding-right: 20px;
+}
+
+.fa-brands {
+  font-size: 16px;
+  margin-left: 5px;
+}
+
+.course-link:hover {
+  color: red;
+}
